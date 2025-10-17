@@ -1,0 +1,96 @@
+/* --- A Modern CSS Reset ---
+  Adaptado para iniciantes e com a base de 10px para 'rem'.
+*/
+
+/* 1. Use um box-sizing mais intuitivo em todos os elementos.
+  Isso faz com que padding e border não aumentem a largura final do elemento.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remova as margens e paddings padrão da maioria dos elementos.
+  Isso evita espaçamentos inesperados e te dá controle total.
+*/
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  3. Defina a altura da linha padrão e suavização de fontes.
+  Melhora a legibilidade do texto.
+*/
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Defina a base da fonte para 10px para facilitar o cálculo com 'rem'.
+  Lembre-se: 1rem = 10px, 1.6rem = 16px, 2.4rem = 24px, etc.
+*/
+html {
+  font-size: 10px; /* Isso corresponde a 62.5% do padrão do navegador (16px) */
+}
+
+/*
+  5. Remova os estilos padrão de lista (bullets e números).
+  Você pode adicioná-los de volta quando precisar.
+*/
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/*
+  6. Facilite o trabalho com imagens.
+  Imagens não ultrapassarão o contêiner pai e se comportarão como blocos.
+*/
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/*
+  7. Herde fontes para inputs e botões.
+  Por padrão, eles não herdam a fonte do `body`, o que pode ser inconsistente.
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Remova animações e transições para pessoas que preferem não as ver.
+  Isso é uma boa prática de acessibilidade.
+*/
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

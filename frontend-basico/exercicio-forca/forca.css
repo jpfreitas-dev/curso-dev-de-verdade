@@ -1,0 +1,202 @@
+header {
+    padding: 4rem 12.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 7.2rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 9rem;
+}
+
+header button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Modal */
+.modal-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 5;
+    background-color: #00000072;
+    top: 0;
+    left: 0;
+}
+
+.modal-content {
+    position: absolute;
+    z-index: 6;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: .8rem solid #000;
+    padding-bottom: 4rem;
+    width: 85%;
+    max-width: 45.3rem;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content .close-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-content .close-container button {
+    background-color: #E1D9D9;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.modal-content .close-container button:hover {
+    background-color: #E26666;
+}
+
+.modal-content p {
+    margin-bottom: .8rem;
+    font-size: 7.2rem;
+    line-height: 9rem;
+}
+
+.modal-content .restart-button {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+main {
+    padding: 2rem 12.2rem 30rem 12.2rem;
+}
+
+.gibbet-section {
+    display: flex;
+    gap: 7.5rem;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.gibbet-section .gibbet {
+    width: 28.8rem;
+    height: 32rem;
+    position: relative;
+}
+
+.gibbet-base {
+    position: absolute;
+    z-index: 1;
+}
+
+/* partes do corpo */
+.gibbet-section .gibbet .body {
+    position: absolute;
+    z-index: 2; /* fica acima do fundo */
+}
+
+/* posicionamento das partes do corpo */
+#head {
+    top: 15rem;
+    left: 24.8rem;
+    width: 4.5rem;
+}
+
+#body-center {
+    top: 19rem;
+    left: 26.4rem;
+    height: 7rem;
+}
+
+#left-arm {
+    top: 19.3rem;
+    left: 21.9rem;
+}
+
+#right-arm {
+    top: 19.3rem;
+    left: 26.8rem;
+}
+
+#left-leg {
+    top: 24.5rem;
+    left: 22.8rem;
+}
+
+#right-leg {
+    top: 24.5rem;
+    left: 26.5rem;
+}
+
+/* Palavra */
+.word-container {
+    display: flex;
+    gap: .8rem;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 4rem;
+}
+
+.word-container .letter-from-word {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+
+.word-container .letter-from-word span {
+    font-size: 6.8rem;
+}
+
+.word-container .letter-from-word div {
+    width: 7.2rem;
+    height: 1.1rem;
+    background-color: #000;
+}
+
+/* Letras */
+.letters-section {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.letters-section div {
+    padding: .5rem 1.5rem .3rem 1.5rem;
+    font-size: 6.8rem;
+    border: .8rem solid #000;
+    line-height: .9;
+    cursor: pointer;
+}
+
+.letters-section .clicked {
+    border: .8rem solid #5e5e5e;
+    color: #5e5e5e;
+    pointer-events: none;
+}
+
+/* Mensagem de vitória/derrota */
+#message-box {
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    color: #E26666;
+}

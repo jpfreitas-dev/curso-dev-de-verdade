@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Responsivo</title>
+    <meta name="description" content="Exercício sobre responsividade">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Kirang+Haerang&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="header.css">
+    <script src="header.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img id="dropdown-toggle" src="./assets/yellow-icons/bars.png" alt="Menu Dropdown" aria-haspopup="menu"
+                aria-expanded="false" aria-controls="dropdown">
+            <img src="./assets/yellow-icons/logo.png" alt="Hamburguer, logo do site">
+            <h1>Hamburguer</h1>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li role="menuitem">
+                    <a href="#">
+                        <img src="./assets/yellow-icons/home.png" alt="Ícone de casa">
+                        Ínicio
+                    </a>
+                </li>
+                <li role="menuitem">
+                    <a href="#">
+                        <img src="./assets/yellow-icons/menu.png" alt="Ícone de cardápio">
+                        Cardápio
+                    </a>
+                </li>
+                <li role="menuitem">
+                    <a href="#">
+                        <img src="./assets/yellow-icons/alert.png" alt="Ícone de alerta">
+                        Lançamentos
+                    </a>
+                </li>
+                <li role="menuitem">
+                    <a href="#">
+                        <img src="./assets/yellow-icons/truck.png" alt="Ícone de alerta">
+                        Delivery
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button type="button">Entrar</button>
+        <nav id="dropdown" role="menu" aria-hidden="false" class="dropdown hidden">
+            <ul>
+                <li role="menuitem">
+                    <a href="#">
+                        <img src="./assets/black-icons/home.svg" alt="Ícone de casa">
+                        Ínicio
+                    </a>
+                </li>
+                <li role="menuitem">
+                    <a href="#">
+                        <img src="./assets/black-icons/menu.svg" alt="Ícone de cardápio">
+                        Cardápio
+                    </a>
+                </li>
+                <li role="menuitem">
+                    <a href="#">
+                        <img src="./assets/black-icons/alert.svg" alt="Ícone de alerta">
+                        Lançamentos
+                    </a>
+                </li>
+                <li role="menuitem">
+                    <a href="#">
+                        <img src="./assets/black-icons/truck.svg" alt="Ícone de alerta">
+                        Delivery
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

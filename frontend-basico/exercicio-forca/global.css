@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Jaro", sans-serif;
+    box-sizing: border-box;
+}
+

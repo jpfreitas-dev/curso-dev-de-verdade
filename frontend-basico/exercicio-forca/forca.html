@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da forca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Jaro:opsz@6..72&family=Kirang+Haerang&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="forca.css">
+    <script src="forca.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div></div>
+        <h1>Frutas</h1>
+        <button id="pause-button" type="button">
+            <img src="./assets/icons/pause.svg" alt="Botão de pause">
+        </button>
+    </header>
+    <div id="pause-modal" class="pause-modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="close-container">
+                <button id="close-button" type="button">
+                    <img src="./assets/icons/close.svg" alt="Ícone de fechar">
+                </button>
+            </div>
+            <p>Reiniciar</p>
+            <button class="restart-button" type="button">
+                <img src="./assets/icons/restart.svg" alt="Ícone de reiniciar">
+            </button>
+        </div>
+    </div>
+    <main>
+        <section class="gibbet-section">
+            <div class="gibbet">
+                <img src="./assets/images/gibbet.svg" alt="Imagem da forca" class="gibbet-base">
+                <img class="body hidden" id="head" src="./assets/images/head.svg" alt="Cabeça">
+                <img class="body hidden" id="body-center" src="./assets/images/body-center.svg" alt="Tronco">
+                <img class="body hidden" id="left-arm" src="./assets/images/left-arm.svg" alt="Braço esquerdo">
+                <img class="body hidden" id="right-arm" src="./assets/images/right-arm.svg" alt="Braço direito">
+                <img class="body hidden" id="left-leg" src="./assets/images/left-leg.svg" alt="Perna esquerda">
+                <img class="body hidden" id="right-leg" src="./assets/images/right-leg.svg" alt="Perna direita">
+            </div>
+
+            <div class="word-container"></div>
+            <!-- Mensagem de vitória/derrota -->
+            <div id="message-box"></div>
+        </section>
+        <section class="letters-section">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+            <div>F</div>
+            <div>G</div>
+            <div>H</div>
+            <div>I</div>
+            <div>J</div>
+            <div>K</div>
+            <div>L</div>
+            <div>M</div>
+            <div>N</div>
+            <div>O</div>
+            <div>P</div>
+            <div>Q</div>
+            <div>R</div>
+            <div>S</div>
+            <div>T</div>
+            <div>U</div>
+            <div>V</div>
+            <div>W</div>
+            <div>X</div>
+            <div>Y</div>
+            <div>Z</div>
+        </section>
+    </main>
+
+</body>
+
+</html>

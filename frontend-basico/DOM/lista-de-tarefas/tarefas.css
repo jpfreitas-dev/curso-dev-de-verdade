@@ -1,0 +1,181 @@
+main {
+    height: 100vh;
+    width: 100vw;
+
+    background: linear-gradient(to right, #002132 0%, 44.85714137554169%, #006575 89.71428275108337%, 94.85714137554169%, #007B87 100%);
+    display: flex;
+    justify-content: center;
+}
+
+main section {
+    width: 75.6rem;
+    height: fit-content;
+    background-color: #080724;
+    margin-top: 17.9rem;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section .title {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+main section .title h1 {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+main section form {
+    width: 70.8rem;
+    height: 3.7rem;
+    padding: 0 .8rem;
+    display: flex;
+    gap: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+main section form input {
+    background-color: #343B47;
+    width: 55.3rem;
+    padding: .9rem 1.2rem;
+    border-radius: .5rem;
+    color: #FFF;
+    font-size: 1.6rem;
+}
+
+main section form button {
+    background-color: #24395D;
+    color: #FFF;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    width: 12.3rem;
+    cursor: pointer;
+}
+
+main section .tasks-container {
+    width: 70.8rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 4rem;
+    margin-bottom: 5.5rem;
+}
+
+main section .tasks-container .task {
+    display: flex;
+    align-items: center;
+    border-bottom: .2rem solid #24395D;
+    padding: 1rem 1.6rem;
+    justify-content: space-between;
+}
+
+main section .tasks-container .task.done {
+    background-color: #189018;
+}
+
+
+main section .tasks-container .task label {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+main section .tasks-container .task input[type="checkbox"] {
+    opacity: 0;
+    /* Deixa ele 100% transparente */
+    position: absolute;
+    /* Tira ele do fluxo da página */
+    height: 0;
+    width: 0;
+}
+
+main section .tasks-container .task .checkmark {
+    display: inline-block;
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-right: .8rem;
+    border: .2rem solid #FFF;
+    border-radius: .2rem;
+}
+
+main section .tasks-container .task label .task-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+main section .tasks-container .task .edit-text {
+    background-color: transparent;
+    color: #FFF;
+    height: 1.9rem;
+    width: max-content;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: .1rem;
+    width: 53rem;
+}
+
+main section .tasks-container .task .edit-text:focus {
+    outline: none;
+}
+
+
+main section .tasks-container .task input[type="checkbox"]:checked+.checkmark {
+    background-image: url('./assets/check.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+main section .tasks-container .task input[type="checkbox"]:checked+.checkmark+.task-text{
+    text-decoration: line-through;
+}
+
+main section .tasks-container .task .delete-edit {
+    display: flex;
+    justify-content: space-between;
+    gap: .8rem;
+}
+
+main section .tasks-container .task .delete {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    background-color: #C31717;
+    padding: .4rem .8rem;
+    border-radius: .8rem;
+    gap: .6rem;
+    width: 7.4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+main section .tasks-container .task .delete p {
+    font-size: 1.2rem;
+}
+
+main section .tasks-container .task .edit {
+    display: flex;
+    align-items: center;
+    background-color: #24395D;
+    border-radius: .4rem;
+    padding: .4rem;
+    cursor: pointer;
+}
+
+.hidden {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+}

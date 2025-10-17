@@ -1,0 +1,111 @@
+:root {
+    --cor-principal: #222222;
+    --cor-secundaria: #BDA41A;
+}
+
+header {
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 3.2rem;
+    position: relative;
+    box-shadow: 0px 4px 7px 0px #00000026;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+header .logo-container h1{
+    display: none;
+    font-family: "Kirang Haerang", system-ui;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-align: left;
+}
+
+header .header-nav {
+    display: none;
+}
+
+header .header-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+}
+
+header .header-nav ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.452rem;
+    text-align: left;
+    color: var(--cor-secundaria);
+}
+
+header button {
+    font-family: "Kirang Haerang", system-ui;
+    font-size: 1.2rem;
+    padding: .4rem 1.6rem;
+    background-color: #BDA41A;
+    border-radius: .4rem;
+}
+
+header .dropdown {
+    position: absolute;
+    top: 5.6rem;
+    padding: 2.4rem 3.2rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    box-shadow: 0px 4px 7px 0px #00000026;
+    left: 0;
+}
+
+header .dropdown ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+header .dropdown ul li a {
+    color: #000;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    gap: .4rem;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 1.2rem;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    header .logo-container #dropdown-toggle{
+        display: none;
+    }
+
+    header .logo-container h1 {
+        display: block;
+        color: var(--cor-secundaria);
+    }
+
+    header .header-nav {
+        display: block;
+    }
+
+    header .dropdown{
+        display: none;
+    }
+}

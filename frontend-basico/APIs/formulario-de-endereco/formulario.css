@@ -6,6 +6,8 @@ main {
     justify-content: center;
 }
 
+
+/* CARD DO FORMULÁRIO         */
 main section {
     width: 44.9rem;
     height: 46.1rem;
@@ -16,6 +18,7 @@ main section {
     align-items: center;
 }
 
+/* CABEÇALHO DO CARD          */
 main section .title {
     width: 36.9rem;
     height: 7.8rem;
@@ -27,11 +30,11 @@ main section .title {
 
 main section .title h1 {
     font-weight: 700;
-    font-style: Bold;
     font-size: 3.2rem;
     color: #18E395;
 }
 
+/* FORMULÁRIO GERAL*/
 main section form {
     width: 36.9rem;
     height: 26.3rem;
@@ -41,42 +44,49 @@ main section form {
     gap: 3.2rem;
 }
 
+
+/* LAYOUT DOS INPUTS (GRID)   */
 main section form .inputs {
     width: 36.9rem;
     height: 18.8rem;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 15px; 
+    gap: 15px;
 }
 
+/*Estilo Padrão dos Inputs*/
 main section form .inputs input {
     width: 100%;
     border: .15rem solid #CCCCCC;
     padding: .8rem;
-    font-size: 1.6rem; 
+    font-size: 1.6rem;
     height: 3.5rem;
 }
 
-main section form .inputs input::placeholder{
+main section form .inputs input::placeholder {
     color: #BFBCBC;
 }
 
+/* Grid para a linha (Rua, Bairro, Número) */
 main section form .inputs > div:first-of-type {
     display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 0.5fr 0.5fr; /* Rua (1fr), Bairro (0.5fr), Num (0.5fr) */
     gap: .8rem;
 }
 
-main section form .inputs > div:last-of-type{
+/* Grid para a linha (Cidade, Estado) */
+main section form .inputs > div:last-of-type {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: .8rem;
 }
 
+/* Garante que o box-sizing dos inputs dentro dos divs esteja correto */
 main section form .inputs > div input {
     box-sizing: border-box;
 }
 
+/* BOTÃO DE AÇÃO              */
 main section form button {
     background-color: #18E395;
     padding: 1.2rem 1.6rem;

@@ -19,7 +19,7 @@ main section .form-container {
     border-right: none;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
 main section .form-container .signup-container {
@@ -54,7 +54,7 @@ main section .form-container form input {
 }
 
 
-main section .form-container .signup-container form .birthdate-container .birthdate-selects{
+main section .form-container .signup-container form .birthdate-container .birthdate-selects {
     margin-top: .4rem;
     display: flex;
     gap: 1.5rem;
@@ -79,13 +79,13 @@ main section .form-container .form-footer {
     width: 37rem;
 }
 
-main section .form-container .form-footer a{
+main section .form-container .form-footer a {
     color: #000;
     font-size: 1.2rem;
     text-decoration: underline;
 }
 
-main section .form-container .form-footer strong{
+main section .form-container .form-footer strong {
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -111,4 +111,3 @@ main section .image-container img {
     height: 100%;
     object-fit: cover;
 }
-

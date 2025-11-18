@@ -104,7 +104,8 @@ main {
 /* partes do corpo */
 .gibbet-section .gibbet .body {
     position: absolute;
-    z-index: 2; /* fica acima do fundo */
+    z-index: 2;
+    /* fica acima do fundo */
 }
 
 /* posicionamento das partes do corpo */

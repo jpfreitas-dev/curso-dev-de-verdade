@@ -19,7 +19,7 @@ main section .form-container {
     border-right: none;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
 main section .form-container form {
@@ -56,13 +56,13 @@ main section .form-container form .form-footer {
     align-items: center;
 }
 
-main section .form-container form .form-footer a{
+main section .form-container form .form-footer a {
     color: #000;
     font-size: 1.2rem;
     text-decoration: underline;
 }
 
-main section .form-container form .form-footer strong{
+main section .form-container form .form-footer strong {
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -84,12 +84,12 @@ main section .form-container .form-separator {
     width: 36.9rem;
 }
 
-main section .form-container .form-separator hr{
+main section .form-container .form-separator hr {
     border-top: .1rem solid #ACACAC;
     flex: 1;
 }
 
-main section .form-container .form-separator span{
+main section .form-container .form-separator span {
     color: #ACACAC;
     font-size: 1.2rem;
 }
@@ -121,4 +121,3 @@ main section .image-container img {
     height: 100%;
     object-fit: cover;
 }
-
